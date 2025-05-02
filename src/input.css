@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button-lg-layout {
+    @apply lg:flex lg:flex-col lg:self-center lg:justify-center lg:h-12 lg:w-32;
+  }
+  .button-md-layout {
+    @apply md:flex md:flex-col md:self-center md:justify-center md:h-12 md:w-32;
+  }
+
+  .button-sm-layout {
+    @apply sm:flex sm:flex-col sm:self-center sm:justify-center sm:h-12 sm:w-32;
+  }
+  .tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .cal-sans-regular {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .comic-relief-regular {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .comic-relief-bold {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .textarea{
+    
+  }
+
+}
