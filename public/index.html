@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/public/output.css" />
+    <link rel="stylesheet" href="./output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,7 @@
     />
   </head>
   <body
-    class="bg-[url('/public/bg.jpg')] bg-cover bg-no-repeat font-serif relative z-10 text-white/90"
+    class="bg-[url('./bg.jpg')] bg-cover bg-no-repeat font-serif relative z-10 text-white/90"
   >
     <header
       class="h-14 w-full top-0 z-20 bg-white/30 backdrop-blur-md sticky flex justify-between"
@@ -128,8 +128,8 @@
         placeholder="How Are You Feeling?"
         rows="4"
         class="h-44 w-80 lg:w-full placeholder-slate-200 px-3 pt-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none break-words overflow-auto mb-5 flex self-center rounded-md rounded-t-2xl bg-white/30 backdrop-blur-md border border-white/20"
-      >
-      </textarea>
+      ></textarea>
+
       <button
         type="submit"
         id="submit"
@@ -200,11 +200,11 @@
     <section class="relative overflow-hidden">
       <div class="flex space-x-4 lg:space-x-20 lg:mt-5 justify-self-center">
         <img
-          src="/public/images/image11.jpg"
+          src="./images/image11.jpg"
           class="w-24 h-24 lg:w-56 lg:h-60 translate-x-full rounded-lg opacity-0 animate-slide-in-right delay-100"
         />
         <img
-          src="/public/images/image22.jpg"
+          src="./images/image22.jpg"
           class="w-24 h-24 lg:w-56 lg:h-60 translate-x-full rounded-lg opacity-0 animate-slide-in-right delay-200"
         />
       </div>
@@ -223,6 +223,6 @@
           .addEventListener("click", generateQuotes);
       });
     </script>
-    <script src="/public/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

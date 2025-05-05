@@ -6,14 +6,13 @@
   "scripts": {
     "start": "wrangler dev",
     "deploy": "wrangler deploy",
-    "build:tw": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+    "build": "tsc && tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@cloudflare/wrangler": "^1.16.0",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.3",

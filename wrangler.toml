@@ -1,5 +1,6 @@
 name = "generate-quote"
 compatibility_date = "2025-05-03"
 main = "src/handler.ts"
+pages_build_output_dir = "./public"
 
 compatibility_flags = ["nodejs_compat"]
