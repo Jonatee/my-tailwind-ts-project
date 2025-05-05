@@ -127,7 +127,7 @@
     
 
     /* Emit */
-    "outDir": "./dist",
+    "outDir": "./public",
     "rootDir": "./src",
 
     /* Interop Constraints */
@@ -136,8 +136,7 @@
 
     /* Type Checking */
     "moduleDetection": "auto",
-    "types": ["node"]
   
   },
-  "include": ["src/**/*", "server.js"]
+  "include": ["src/**/*"]
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/public/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
     class="bg-[url('/public/bg.jpg')] bg-cover bg-no-repeat font-serif relative z-10 text-white/90"
   >
     <header
-      class="h-14 w-full top-0 z-20 bg-stone-950 sticky flex justify-between"
+      class="h-14 w-full top-0 z-20 bg-white/30 backdrop-blur-md sticky flex justify-between"
     >
       <div
         class="ml-6 text-xl font-bold text-gray-200 flex justify-center self-center"
@@ -137,27 +137,63 @@
       >
         Generate
       </button>
-
       <div
         id="overlay"
-        class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden"
+        class="fixed inset-0 bg-black/60 backdrop-blur-lg z-40 hidden transition-opacity duration-500"
       ></div>
 
       <div
         id="advicePanel"
-        class="fixed bottom-0 left-0 right-0 bg-white rounded-t-2xl shadow-lg z-50 transform translate-y-full transition-transform duration-300 max-h-[80vh] overflow-y-auto"
+        class="fixed bottom-0 left-0 right-0 bg-gradient-to-br from-white via-gray-50 to-blue-50 rounded-t-3xl shadow-2xl z-50 transform translate-y-full transition-all duration-700 ease-out max-h-[80vh] overflow-y-auto border-t border-blue-100"
       >
-        <div class="flex justify-between items-center p-4 border-b">
-          <h2 class="text-lg font-semibold text-gray-800">Advice</h2>
-          <button
-            id="closeBtn"
-            class="text-gray-500 hover:text-gray-700 focus:outline-none"
+        <div class="relative">
+          <div
+            class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-t-3xl"
+          ></div>
+
+          <div
+            class="flex justify-between items-center p-6 border-b border-gray-100"
           >
-            &times;
-          </button>
-        </div>
-        <div id="adviceContent" class="p-4 text-gray-700">
-          <!-- Advice will be injected here -->
+            <h2
+              class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 tracking-tight"
+            >
+              MOTIVATION QUOTE
+            </h2>
+            <div class="flex items-center gap-2">
+              <div
+                class="h-1 w-16 rounded-full bg-gradient-to-r from-blue-300 to-purple-300 opacity-50"
+              ></div>
+              <button
+                id="closeBtn"
+                class="text-gray-500 hover:text-gray-900 focus:outline-none transition-all duration-300 h-10 w-10 flex items-center justify-center rounded-full hover:bg-gray-100 active:scale-95"
+              >
+                <span class="text-2xl">&times;</span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="adviceContent"
+            class="p-8 text-gray-700 font-medium leading-relaxed"
+          >
+            <div class="flex items-start space-x-3 mb-4">
+              <div class="text-3xl text-blue-500">❝</div>
+            </div>
+            <div class="px-4">
+              <!-- Advice will be injected here -->
+            </div>
+            <div class="flex justify-end mt-4">
+              <div class="text-3xl text-blue-500">❞</div>
+            </div>
+          </div>
+
+          <div class="px-8 pb-6 pt-2 flex justify-end">
+            <div
+              class="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
+            >
+              Get Inspired
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -184,9 +220,9 @@
       document.addEventListener("DOMContentLoaded", () => {
         document
           .getElementById("submit")
-          .addEventListener("click", generateQuote);
+          .addEventListener("click", generateQuotes);
       });
     </script>
-    <script src="/dist/index.js"></script>
+    <script src="/public/index.js"></script>
   </body>
 </html>

@@ -8,12 +8,11 @@ node_modules/
 .env.development
 .env.test
 .env.production
-
+.wrangler
 # Build output
 dist/
 build/
 out/
-server.js
 # Logs
 logs/
 *.log

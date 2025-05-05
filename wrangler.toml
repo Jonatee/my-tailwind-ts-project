@@ -1,0 +1,5 @@
+name = "generate-quote"
+compatibility_date = "2025-05-03"
+main = "src/handler.ts"
+
+compatibility_flags = ["nodejs_compat"]
