@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./public/index.html", 
-    "./src/**/*.{html,js,ts}", 
-  ],
+  content: ["./public/index.html", "./src/**/*.{html,js,ts}"],
   theme: {
     extend: {
       keyframes: {
@@ -15,6 +12,9 @@ module.exports = {
       animation: {
         "slide-in-right": "slide-in-right 0.5s ease-out forwards",
       },
+    },
+    screens: {
+      xs: "480px",
     },
   },
   plugins: [],

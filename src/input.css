@@ -4,14 +4,14 @@
 
 @layer components {
   .button-lg-layout {
-    @apply lg:flex lg:flex-col lg:self-center lg:justify-center lg:h-12 lg:w-32;
+    @apply lg:flex lg:flex-col lg:self-center lg:justify-center  lg:h-10 lg:w-32;
   }
   .button-md-layout {
-    @apply md:flex md:flex-col md:self-center md:justify-center md:h-12 md:w-32;
+    @apply md:flex md:flex-col md:self-center md:justify-center md:h-10 md:w-32 ;
   }
 
   .button-sm-layout {
-    @apply sm:flex sm:flex-col sm:self-center sm:justify-center sm:h-12 sm:w-32;
+    @apply sm:flex sm:flex-col sm:self-center sm:justify-center  sm:h-10 sm:w-32 ;
   }
   .tagesschrift-regular {
     font-family: "Tagesschrift", system-ui;
