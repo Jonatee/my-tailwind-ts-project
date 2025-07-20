@@ -13,6 +13,9 @@
   .button-sm-layout {
     @apply sm:flex sm:flex-col sm:self-center sm:justify-center  sm:h-10 sm:w-32 ;
   }
+  .gradient-border {
+    @apply rounded-xl border-4 border-transparent bg-gradient-to-br from-teal-400 to-teal-900;
+  }
   .tagesschrift-regular {
     font-family: "Tagesschrift", system-ui;
     font-weight: 400;
