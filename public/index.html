@@ -27,10 +27,10 @@
     />
   </head>
   <body
-    class="flex flex-col justify-self-center items-center content-center min-h-full min-w-full bg-gradient-to-br from-slate-800 to-slate-900 sm:bg-[url('./bg.jpg')] sm:bg-cover sm:bg-no-repeat font-serif relative text-slate-300"
+    class="flex flex-col justify-self-center items-center content-center min-h-screen min-w-full bg-gradient-to-br from-slate-800 to-slate-900 sm:bg-[url('./bg.jpg')] sm:bg-cover sm:bg-no-repeat font-serif relative text-slate-300"
   >
     <header
-      class="h-14 sm:w-full w-[85%] mt-4 sm:mt-0 px-3 sm:px-0 bg-slate-800/40 backdrop-blur-md sm:sticky sm:top-0 flex justify-between z-10 sm:border-b-0 sm:border-t-0 border-b-2 border-t-2 border-slate-600/30 rounded-lg shadow-lg"
+      class="h-14 sm:w-full w-[85%] mt-4 sm:mt-0 px-3 sm:px-0 bg-white sm:bg-white/30 backdrop-blur-lg sm:sticky sm:top-0 flex justify-between z-10 sm:border-b-0 sm:border-t-0 border-2 border-slate-600/30 rounded-lg shadow-2xl"
     >
       <div
         class="ml-6 text-xl font-bold text-slate-200 flex justify-center self-center"
@@ -116,7 +116,7 @@
         </a>
       </div>
     </header>
-    <div class="container w-[95%] border-slate-600/30 mx-auto z-0">
+    <div class="container w-[95%] h-full relative border-slate-600/30 mx-auto z-0">
       <hero
         class="h-44 mt-32 px-4 rounded-b-lg sm:h-60 lg:h-72 w-full font-sans flex justify-center"
       >
@@ -128,22 +128,22 @@
 
           </h2>
           <p
-            class="break-words flex space-x-2 mt-4 max-w-fit px-4 py-2 rounded-lg font-bold comic-relief-bold animate-slide-in-right delay-300"
+            class="break-words flex align-text-bottom space-x-2 mt-4 max-w-fit px-4 py-2 rounded-lg font-bold comic-relief-bold animate-slide-in-right delay-300"
           >
-            <span class="text-xl text-teal-400 px-1">Prompt</span>  and get a motivational quote to help you get through
+            <span class="text-lg text-teal-400 bebas-neue-regular px-1">Prompt</span>  and get a motivational quote to help you get through
             the day<i class="pt-1 hidden sm:block  fas fa-calendar-day text-emerald-400"></i>.
           </p>
         </div>
       </hero>
       <section
-        class="h-64 flex flex-col lg:w-1/3 justify-center items-center rounded-lg mx-auto"
+        class=" relative h-64 flex flex-col lg:w-1/3 justify-center items-center rounded-lg mx-auto"
       >
         <textarea
           id="textarea"
           name="textarea"
           placeholder="How Are You Feeling?"
           rows="4"
-          class="h-32 w-60 sm:h-44 sm:w-80 lg:w-full placeholder-slate-400 placeholder-opacity-85 px-3 pt-4 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 resize-none break-words overflow-auto mb-5 flex self-center rounded-xl rounded-t-xl bg-slate-800/40 backdrop-blur-md border border-slate-600/30 shadow-2xl text-slate-200"
+          class="h-32 w-[90%] sm:h-44 sm:w-80 lg:w-full placeholder-slate-400 placeholder-opacity-85 px-3 pt-4 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 resize-none break-words overflow-auto mb-5 flex self-center rounded-xl rounded-t-xl bg-slate-800/40 backdrop-blur-md border border-slate-600/30 shadow-2xl text-slate-200"
         ></textarea>
 
         <button
@@ -215,7 +215,7 @@
         </div>
       </section>
       <section class="relative overflow-hidden">
-        <div class="flex h-[7rem] sm:h-[17rem] space-x-7 lg:space-x-20 lg:mt-5 justify-self-center">
+        <div class="flex mb-10 h-[7rem] sm:h-[17rem] space-x-7 lg:space-x-20 lg:mt-5 justify-self-center">
           <img
             src="./images/image11.jpg"
             class="w-24 h-24 lg:w-56 lg:h-60 shadow-[12px_12px_8px_rgba(148,163,184,0.3)] translate-x-full transition-all ease-linear duration-300 rounded-lg opacity-0 animate-slide-in-right delay-100"
@@ -226,14 +226,15 @@
           />
         </div>
       </section>
+      </div>
 
-      <footer>
-        <div class="flex flex-col justify-center items-center mt-10 mb-5">
-          <p class="text-sm text-slate-300 font-bold">Made with 💙 by Jonatee</p>
+      <footer class="absolute w-full bottom-0 right-0 left-0 comic-relief-regular backdrop-blur-md">
+        <div class=" flex flex-col justify-center items-center">
+          <p class="text-sm text-slate-300  font-bold">Made with 💙 by Jonatee</p>
           <p class="text-sm text-slate-300 font-bold">© 2025 AI Motivation</p>
-        </div>
+        </div> 
       </footer>
-    </div>
+   
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
